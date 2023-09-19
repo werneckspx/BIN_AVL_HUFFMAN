@@ -9,9 +9,9 @@
 # Problema Proposto
   Neste trabalho, o objetivo é criar um sistema que possibilite a funcionalidade de autocompletar e oferecer sugestões de palavras aos usuários. Para atingir essa finalidade, adotaremos a estrutura da árvore binária como base.<br>
   
-  -  Criar uma arvore binaria.
-  -  Criar uma arvore AVL
-  -  Criar um codigo de Huffman.
+▶  Criar uma arvore binaria. <br>
+▶ Criar uma arvore AVL. <br>
+▶  Criar um codigo de Huffman. <br>
     
 A partir da criacao das arvores, o objetivo e ter uma compreensão mais aprofundada das suas diferentes implementações e sua influência no sistema de autocompletar e sugestões de
 palavras. A análise comparativa nos permitirá avaliar a eficácia de cada abordagem em termos de desempenho e funcionalidade.
@@ -20,17 +20,24 @@ palavras. A análise comparativa nos permitirá avaliar a eficácia de cada abor
 |  Arquivo                        |   Função                                                                                          |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |
 |  `main.cpp`                       | arquivo principal para iniciar e chamar as funções do código                                                    |
-|  `read.hpp`                  | define as funções que foram utilizadas no código |
-|  `read.cpp`                  | contém o escopo de todas as funções que foram utilizadas |
-|  `DomCasmurro.txt`               | arquivo de entrada no qual será feita a análise das palavras |
-| `Semana_Machado_Assis.txt` | arquivo de entrada principal no qual será feita a análise das palavras |
-| `stopwords.csv` | arquivo que contem as stop words|
+|  `read.hpp`                  | define as funções que foram utilizadas no código|
+|  `read.cpp`                  | contém o escopo de todas as funções que foram utilizadas|
+|  `corretor.hpp`                  | define as funções que foram utilizadas no código para determinar um padrao nas palavras lidas|
+|  `corretor.cpp`                  | contém o escopo de todas as funções que foram utilizadas para determinar um padrao nas palavras lidas|
+|  `Arvore.hpp`                  | define as funções que foram utilizadas no código  para a classe da Arvore de Pesquisa Binaria|
+|  `Arvore.cpp`                  | contém o escopo de todas as funções que foram utilizadas para a classe da Arvore de Pesquisa Binaria|
+|  `ArvoreAVL.hpp`                  | define as funções que foram utilizadas no código para a classe da ArvoreAVL|
+|  `ArvoreAVL.cpp`                  | contém o escopo de todas as funções que foram utilizadas para a classe da ArvoreAVL|
+|  `Huffman.hpp`                  | define as funções que foram utilizadas no código para a classe do Codigo de Huffman|
+|  `Huffman.cpp`                  | contém o escopo de todas as funções que foram utilizadas para a classe do Codigo de Huffman|
+|  `No.hpp`                  | define as funções que foram utilizadas no código para a classe No|
+|  `No.cpp`                  | contém o escopo de todas as funções que foram utilizadas na classe No|
 
 
 ## HEAP
-  O heap, tem uma sequencia de elementos com chaves, c[1], c[2],...,c[n], tal que, para que as chaves satisfaçam a condição de funcionamento, a chave de um nó pai deve ser maior que a chave aplicada à seus filhos. Para todo `i`, temos que: 
-  -  c[i] ≥ c[2i] <br>
-  -  c[i] ≥ c[2i + 1] <br>
+  O heap, tem uma sequencia de elementos com chaves, c[1], c[2],...,c[n], tal que, para que as chaves satisfaçam a condição de funcionamento, a chave de um nó pai deve ser maior que a chave aplicada à seus filhos. Para todo `i`, temos que: <br> 
+▶ c[i] ≥ c[2i] <br>
+▶ c[i] ≥ c[2i + 1] <br>
   
 Onde os filhos de `i` sao: 2i e 2i+1. Consequentemente, temps que o pai de `i` e `i` divido por 2. Essa definição deixa a estrutura similar a de uma árvore binária completa. <br>
 
@@ -51,31 +58,33 @@ A árvore de pesquisa é uma estrutura muito eficiênte para armazenar informaç
 ▶ Boa taxa de utilização de memória<br>
 ▶ Utilização de memória primária e secundária<br>
 <div align="center"><img width="500px" src="imgs/hash.jpeg" /> <br></div>
-Chamamos R de raiz da árvore, FE de filho esquerdo e FD de filho direito
-Todos os elementos menores ficam na subárvore esquerda.
-Todos os elementos maiores ficam na subárvore direira.
 
-Diferentemente de uma arvore natural, estas sao representadas de cima para baixo, com a raiz no topo e as folhas na base(nodos terminais). A raiz e um no que nao tem ancestrais; so pode ter nos filhos. As folhas, por outro lado, nao tem filhos, ou melhor, seus filhoes sao estruturas vazias. Uma arvore pode ser definida recursivamente como:
-  -Uma estrutura vazia, e uma arvore vazia.
-  -Se t1,...,tk sao arvores disjuntas, entao a estrutura cuja raiz tem como suas filhas as raizes de t1,...,tk tambem e uma arvore.
-  -Somente estruturas geradas pela regra 1 e 2 sao arvores.
-Una arvire binaria de busca tem a seguinte propriedade: cada no n da arvore, todos os valores armazenados em sua subarvore a esquerda (a arvore cuja raiz e o filho da esquerda) sao menores que o valor v armazenado em n, e todos os valores armzenados na subarcore direita sao maiores ou igual a v. A ordenacao de maneira lexicografica tambem pode ser utilizada em casos de valores iguais.
-Para uma árvore de pesquisa binária randômica, o número  esperado de comparações para encontrar um registro é de aproximadamente 1.39(lg n), ou seja, 39% pior que uma árvore completamente balanceada.
+  -  Chamamos R de raiz da árvore, FE de filho esquerdo e FD de filho direito. <br>
+  -  Todos os elementos menores ficam na subárvore esquerda. <br>
+  -  Todos os elementos maiores ficam na subárvore direira. <br>
+
+Diferentemente de uma arvore natural, estas sao representadas de cima para baixo, com a raiz no topo e as folhas na base(nodos terminais). A raiz e um no que nao tem ancestrais; so pode ter nos filhos. As folhas, por outro lado, nao tem filhos, ou melhor, seus filhoes sao estruturas vazias. Uma arvore pode ser definida recursivamente como: <br>
+  -  Uma estrutura vazia, e uma arvore vazia. <br>
+  -  Se t1,...,tk sao arvores disjuntas, entao a estrutura cuja raiz tem como suas filhas as raizes de t1,...,tk tambem e uma arvore. <br>
+  -  Somente estruturas geradas pela regra 1 e 2 sao arvores.<br>
+
+Uma arvore binaria de busca tem a seguinte propriedade: cada no n da arvore, todos os valores armazenados em sua subarvore a esquerda (a arvore cuja raiz e o filho da esquerda) sao menores que o valor v armazenado em n, e todos os valores armzenados na subarcore direita sao maiores ou igual a v. A ordenacao de maneira lexicografica tambem pode ser utilizada em casos de valores iguais.
+Para uma árvore de pesquisa binária randômica, o número  esperado de comparações para encontrar um registro é de aproximadamente **1.39(lg n)**, ou seja, **39%** pior que uma árvore completamente balanceada.
 
 ## AVL
 
-Uma arvore AVL e aquela na qual as alturas das subarvores esquerda e direita de cada no diferem no mazimo por um. Os numeros nos nos indicam os fatores de balanceamento, que sao as diferencas entre as alturas das subarvores esquerda e direita. Um fator de balanceamento e a altura da subarvore direita menos a altura da subarvore esquerda. Para uma arvore AVL, todos os fatores de balanceamento devem ser +1, 0 ou -1. Note que a definicao de arvore AVL e a mesma que a da arvore balanceada. Vale ressaltar que, a tecnica de balanceamento da arvore AVL nao garante que a arvore resultante esteja perfeitamente balanceada. Se o fator de balanceamento de qualquer no em uma arvore AVL se torna menor do que -1 ou maior que 1, a arvore tem que ser balanceada. Contudo, se os fatores de balanceamento no caminho do recem-inserido no ate a raiz da arvore sao todos zero, tem que ser atualizados, mas nenhuma rotacao e necessaria para quaisquer nos encontrados. A busca de pior caso exige O(lg n) comparacoes. Para uma arvore binaria perfeitamente balanceada de mesma altura h e lg(h+1). Por esta razao, o tempo de busca no pior caso em uma arvore AVL e 44% pior(ela exige 44% mais comparacoes) do que na configuracao de arvore do melhor caso.
+Uma arvore AVL e aquela na qual as alturas das subarvores esquerda e direita de cada no diferem no mazimo por um. Os numeros nos nos indicam os fatores de balanceamento, que sao as diferencas entre as alturas das subarvores esquerda e direita. Um fator de balanceamento e a altura da subarvore direita menos a altura da subarvore esquerda. Para uma arvore AVL, todos os fatores de balanceamento devem ser +1, 0 ou -1. Note que a definicao de arvore AVL e a mesma que a da arvore balanceada. Vale ressaltar que, a tecnica de balanceamento da arvore AVL nao garante que a arvore resultante esteja perfeitamente balanceada. Se o fator de balanceamento de qualquer no em uma arvore AVL se torna menor do que -1 ou maior que 1, a arvore tem que ser balanceada. Contudo, se os fatores de balanceamento no caminho do recem-inserido no ate a raiz da arvore sao todos zero, tem que ser atualizados, mas nenhuma rotacao e necessaria para quaisquer nos encontrados. A busca de pior caso exige **O(lg n)** comparacoes. Para uma arvore binaria perfeitamente balanceada de mesma altura h e **lg(h+1)**. Por esta razao, o tempo de busca no pior caso em uma arvore AVL e **44%** pior do que na configuracao de arvore do melhor caso.
 
 ## HUFFMAN
 
 A codificação de Huffman é um algoritmo cujo princípio básico está na geração de uma codificação de prefixo para tratar a frequência de cada símbolo de uma entrada. Seu objetivo é gerar o menor número de bits possível para a representação de cada uma das frequências mapeadas. O filho esquerdo esta associado ao bit ZERO enquanto o filho direito esta associado ao bit UM. A ideia do algoritmo de Huffman começa com um conjunto de N folhas e, em seguida, realiza N - 1 operações sequenciais de combinação de dois vértices da árvore. Em cada uma dessas combinações, um novo vértice interno é criado, que se torna o pai dos vértices que estão sendo combinados. A escolha de quais dois vértices combinar em cada passo depende da soma das frequências das folhas das subárvores com raízes nos vértices que ainda não foram combinados.
 
-A:0.08, B:0.10, C:0.12, D:015, E:0.20 e F:0.35 como suas respectivas frequências.
+▶A:0.08, B:0.10, C:0.12, D:015, E:0.20 e F:0.35 como suas respectivas frequências.
 <div align="center"><img width="500px" src="imgs/hash.jpeg" /> <br></div>
 
 Se T e a  arvore que representa a codificacao, dT (c) e a profundidade da folha representado o caracter c e f(c) e a sua frequencia, o tamanho do arquivo comprimido ser a dado por:
 <div align="center"><img width="500px" src="imgs/hash.jpeg" /> <br></div>
-Dizemos que B(T) e o custo da arvore T.Isto e exatamente o tamanho do arquivo codificado.
+Dizemos que B(T) e o custo da arvore T. Isto e exatamente o tamanho do arquivo codificado.
 
 ## Utilizados
 
