@@ -1,0 +1,422 @@
+TEXTO: dataset/textos/Docs/filosofia.txt
+
+PALAVRA: nietzsche
+
+
+Codigo de Huffman
+priori 000
+modo 001
+condição 010
+mundo 011
+sujeito 100
+teoria 101
+segundo 1100
+sobre 1101
+sistema 1110
+pensamento 1111
+
+
+Arvore Binaria
+sobre 114
+segundo 114
+pensamento 115
+sistema 115
+priori 125
+modo 129
+condição 134
+mundo 134
+sujeito 158
+teoria 176
+
+
+Arvore AVL
+sobre 114
+segundo 114
+sistema 115
+modo 129
+priori 125
+pensamento 115
+mundo 134
+teoria 176
+sujeito 158
+condição 134
+
+PALAVRA: aquilo
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: teoria
+
+
+Codigo de Huffman
+pensamento 000
+priori 001
+modo 010
+mundo 011
+condição 100
+sujeito 101
+sentido 1100
+segundo 1101
+sobre 1110
+sistema 1111
+
+
+Arvore Binaria
+sentido 110
+sobre 114
+segundo 114
+sistema 115
+pensamento 115
+priori 125
+modo 129
+mundo 134
+condição 134
+sujeito 158
+
+
+Arvore AVL
+sentido 110
+sobre 114
+segundo 114
+sistema 115
+modo 129
+priori 125
+pensamento 115
+mundo 134
+sujeito 158
+condição 134
+
+PALAVRA: rede
+
+
+Codigo de Huffman
+priori 000
+modo 001
+mundo 010
+condição 011
+sujeito 100
+teoria 101
+sobre 1100
+segundo 1101
+pensamento 1110
+sistema 1111
+
+
+Arvore Binaria
+segundo 114
+sobre 114
+sistema 115
+pensamento 115
+priori 125
+modo 129
+mundo 134
+condição 134
+sujeito 158
+teoria 176
+
+
+Arvore AVL
+segundo 114
+sobre 114
+sistema 115
+modo 129
+priori 125
+pensamento 115
+mundo 134
+teoria 176
+sujeito 158
+condição 134
+
+PALAVRA: aquela
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+TEXTO: dataset/textos/Docs/filosofia2.txt
+
+PALAVRA: nietzsche
+
+
+Codigo de Huffman
+modo 000
+condição 001
+mundo 010
+priori 011
+sujeito 100
+teoria 101
+sobre 1100
+segundo 1101
+pensamento 1110
+sistema 1111
+
+
+Arvore Binaria
+segundo 114
+sobre 114
+pensamento 115
+sistema 119
+modo 129
+condição 133
+mundo 144
+priori 144
+sujeito 154
+teoria 192
+
+
+Arvore AVL
+segundo 114
+sobre 114
+sistema 119
+condição 133
+modo 129
+pensamento 115
+priori 144
+teoria 192
+sujeito 154
+mundo 144
+
+PALAVRA: aquilo
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: teoria
+
+
+Codigo de Huffman
+sistema 000
+modo 001
+condição 010
+mundo 011
+priori 100
+sujeito 101
+sentido 1100
+segundo 1101
+sobre 1110
+pensamento 1111
+
+
+Arvore Binaria
+sentido 111
+sobre 114
+segundo 114
+pensamento 115
+sistema 119
+modo 129
+condição 133
+mundo 144
+priori 144
+sujeito 154
+
+
+Arvore AVL
+sentido 111
+sobre 114
+segundo 114
+sistema 119
+condição 133
+modo 129
+pensamento 115
+priori 144
+sujeito 154
+mundo 144
+
+PALAVRA: rede
+
+
+Codigo de Huffman
+modo 000
+condição 001
+mundo 010
+priori 011
+sujeito 100
+teoria 101
+sobre 1100
+segundo 1101
+pensamento 1110
+sistema 1111
+
+
+Arvore Binaria
+segundo 114
+sobre 114
+pensamento 115
+sistema 119
+modo 129
+condição 133
+mundo 144
+priori 144
+sujeito 154
+teoria 192
+
+
+Arvore AVL
+segundo 114
+sobre 114
+sistema 119
+condição 133
+modo 129
+pensamento 115
+priori 144
+teoria 192
+sujeito 154
+mundo 144
+
+PALAVRA: aquela
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+TEXTO: dataset/textos/Docs/globalizacao.txt
+
+PALAVRA: nietzsche
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: aquilo
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: teoria
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: rede
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: aquela
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+TEXTO: dataset/textos/Docs/politica.txt
+
+PALAVRA: nietzsche
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: aquilo
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: teoria
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: rede
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: aquela
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+TEXTO: dataset/textos/Docs/ti.txt
+
+PALAVRA: nietzsche
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: aquilo
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: teoria
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: rede
+
+
+Codigo de Huffman
+informações 000
+dados 001
+novas 010
+implantação 011
+segurança 100
+utilização 101
+desenvolvimento 1100
+aumento 1101
+impacto 1110
+ti 1111
+
+
+Arvore Binaria
+aumento 200
+impacto 200
+desenvolvimento 200
+informações 201
+ti 201
+novas 201
+dados 201
+implantação 266
+segurança 268
+utilização 399
+
+
+Arvore AVL
+aumento 200
+impacto 200
+desenvolvimento 200
+informações 201
+ti 201
+novas 201
+dados 201
+utilização 399
+segurança 268
+implantação 266
+
+PALAVRA: aquela
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+TEXTO: dataset/textos/Docs/ti2.txt
+
+PALAVRA: nietzsche
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: aquilo
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: teoria
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
+
+PALAVRA: rede
+
+
+Codigo de Huffman
+ti 000
+assim 001
+dados 010
+implantação 011
+segurança 100
+utilização 101
+hardware 1100
+informações 1101
+aumento 1110
+melhor 1111
+
+
+Arvore Binaria
+informações 200
+hardware 200
+aumento 201
+ti 201
+melhor 201
+dados 201
+assim 201
+implantação 267
+segurança 268
+utilização 400
+
+
+Arvore AVL
+informações 200
+hardware 200
+assim 201
+ti 201
+melhor 201
+dados 201
+utilização 400
+segurança 268
+implantação 267
+aumento 201
+
+PALAVRA: aquela
+ESSA PALAVRA NAO APARECE NESTE TEXTO!
+
