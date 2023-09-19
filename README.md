@@ -102,6 +102,8 @@ Arvore Binaria: Para o desenvovimento da arvore binaria temos a funcao 'inserirA
 
 Arvore AVL: Para o desenvolvimento da arvore AVL temos a funcao altura esta calcula a altura de um nó na árvore AVL. A altura é a maior distância entre o nó atual e um de seus nós folha mais distantes, ela é implementada de forma recursiva. A funcao calcularbalanceador calcula o fator de balanceamento de um nó. O fator de balanceamento de um nó é a diferença entre as alturas das subárvores esquerda e direita desse nó. Um fator de balanceamento maior que 1 indica que a árvore está desbalanceada à esquerda, e um fator de balanceamento menor que -1 indica que a árvore está desbalanceada à direita. A funcao rotacaoDireita() é usada para realizar uma rotação à direita em um nó y desbalanceado ajustando os ponteiros para reequilibrar a árvore. A funcao rotacaoEsquerda() é usada para realizar uma rotação à esquerda em um nó x desbalanceado, ajustando os ponteiros para reequilibrar a árvore. A funcao inserirAux() esta é usado para inserir um nó na árvore AVL de maneira recursiva, insere o nó da mesma forma que uma árvore de busca binária, mas também verifica e reequilibra a árvore quando necessário com base no fator de balanceamento dos nós. A funcao inserir() insere um conjunto de nós (representados como um vetor heap) na árvore AVL. Ele percorre o vetor de nós e, para cada nó, chama o método inserirAux para inserir o nó na árvore. Após inserir todos os nos, e chamada a funcao Imprirmir para que seja possivel ter uma visualizacao da arvore.
 
+Codigo de Huffman: 
+
 
  # Resultados 
    Considerando a lógica e a descrição do problema acima, o resultado esperado durante a leitura dos arquivos:
