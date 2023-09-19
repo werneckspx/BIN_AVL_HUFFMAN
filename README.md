@@ -99,7 +99,8 @@ Apos a criacao e print de todas as arvores no output.txt, e possivel fazer anali
 
  # Resultados 
    Considerando a lógica e a descrição do problema acima, o resultado esperado diante a leitura dos arquivos:
-   <div align="center"><img width="300px" src="imgs/input.jpeg" /> <img width="300px" src="imgs/output.jpeg" /> <img width="300px" src="imgs/output2.jpeg" /> <br></div>
+   <div align="center"><img width="300px" src="imgs/input.jpeg" /> </div>
+   <div align="center"><img width="300px" src="imgs/output.jpeg" /> <img width="280px" src="imgs/output2.jpeg" /> <br></div>
 
    Pode-se ver que o output.txt apresenta o texto que esta sendo analisado e em seguida a palavra a ser analisada, esse processo e feito para todas as palavras lidas no input.data para todos os textos, em seguida, mostra-se a arvore feita a partir da palavra mostrada, codigo de huffman, arvore binaria e a arvore AVL. Caso a palavra nao tenha nenhuma aparicao no texto, e colocada uma mensagem avisando isso, como acontece na palavra aquilo, no exemplo acima. 
 
