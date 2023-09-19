@@ -104,7 +104,7 @@ Apos a criacao e print de todas as arvores no output.txt, e possivel fazer anali
    Pode-se ver que o output.txt apresenta o texto que esta sendo analisado e em seguida a palavra a ser analisada, esse processo e feito para todas as palavras lidas no input.data para todos os textos, em seguida, mostra-se a arvore feita a partir da palavra mostrada, codigo de huffman, arvore binaria e a arvore AVL. Caso a palavra nao tenha nenhuma aparicao no texto, e colocada uma mensagem avisando isso, como acontece na palavra aquilo, no exemplo acima. 
 
 # Conclusao
-  Por meio do projeto e possivel compreender melhor o funcionamento das arvores Binaria, AVL e Huffman, sendo estruturas fundamentais, que podem ser utilizadas para resolver diversos problemas. Neste caso, para a solucao do problema Sistema de Autocompletar e Sugestões de Palavras,
+  Por meio do projeto e possivel compreender melhor o funcionamento das arvores Binaria, AVL e Huffman, sendo estruturas fundamentais, que podem ser utilizadas para resolver diversos problemas. Neste caso, para a solucao do problema Sistema de Autocompletar e Sugestões de Palavras, e possivel pegar as palavras com maior frequencia de apariacao e mostrar outras que podem ser utilizadas em sequencia a partir da frequencia. Todas as arvores montadas conseguem cumprir o proposito, e retornam as palavras conforme a frequencia. Para caso de analise, em cada situacao pode ser necessario utilizar uma arvore diferente.
  # Bibliotecas 
 <p>Para o funcionamento do programa, é necessário incluir as seguintes bibliotecas: 
 <ul>
