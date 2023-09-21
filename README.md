@@ -68,8 +68,7 @@ Diferentemente de uma arvore natural, estas sao representadas de cima para baixo
   -  Se t1,...,tk sao arvores disjuntas, entao a estrutura cuja raiz tem como suas filhas as raizes de t1,...,tk tambem e uma arvore. <br>
   -  Somente estruturas geradas pela regra 1 e 2 sao arvores.<br>
 
-Uma arvore binaria de busca tem a seguinte propriedade: cada no n da arvore, todos os valores armazenados em sua subarvore a esquerda (a arvore cuja raiz e o filho da esquerda) sao menores que o valor v armazenado em n, e todos os valores armzenados na subarcore direita sao maiores ou igual a v. A ordenacao de maneira lexicografica tambem pode ser utilizada em casos de valores iguais.
-Para uma árvore de pesquisa binária randômica, o número  esperado de comparações para encontrar um registro é de aproximadamente **1.39(lg n)**, ou seja, **39%** pior que uma árvore completamente balanceada.
+Uma arvore binaria de busca tem a seguinte propriedade: cada no n da arvore, todos os valores armazenados em sua subarvore a esquerda (a arvore cuja raiz e o filho da esquerda) sao menores que o valor v armazenado em n, e todos os valores armzenados na subarcore direita sao maiores ou igual a v. A ordenacao de maneira lexicografica tambem pode ser utilizada em casos de valores iguais. O custo computacional envolvido e de O(lg n), no caso da arvore tender para apenas um lado, tem-se o pior caso, que e O(n). Para uma árvore de pesquisa binária randômica, o número  esperado de comparações para encontrar um registro é de aproximadamente **1.39(lg n)**, ou seja, **39%** pior que uma árvore completamente balanceada, a partir de testes realizados.
 
 ## AVL
 
@@ -77,7 +76,7 @@ Uma arvore AVL e aquela na qual as alturas das subarvores esquerda e direita de 
 
 <div align="center"><img width="300px" src="imgs/avl.jpeg" /> <br></div>
 
-Contudo, se os fatores de balanceamento no caminho do recem-inserido no ate a raiz da arvore sao todos zero, tem que ser atualizados, mas nenhuma rotacao e necessaria para quaisquer nos encontrados. A busca de pior caso exige **O(lg n)** comparacoes. Para uma arvore binaria perfeitamente balanceada de mesma altura h e **lg(h+1)**. Por esta razao, o tempo de busca no pior caso em uma arvore AVL e **44%** pior do que na configuracao de arvore do melhor caso.
+Contudo, se os fatores de balanceamento no caminho do recem-inserido no ate a raiz da arvore sao todos zero, tem que ser atualizados, mas nenhuma rotacao e necessaria para quaisquer nos encontrados. A busca de pior caso exige **O(lg n)** comparacoes. Para uma arvore binaria perfeitamente balanceada de mesma altura h e **lg(h+1)**. Por esta razao, o tempo de busca no pior caso em uma arvore AVL e **44%** pior do que na configuracao de arvore AVL no melhor caso. No melhor caso, o custo e de O(lg n). Estudos empiricos indicam que o numero medio de busca esta muita mais perto do melhor caso do que do pior, e este custo e igual a O((lg n)+0.25) para um n grande.
 
 ## HUFFMAN
 
