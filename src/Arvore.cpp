@@ -8,30 +8,27 @@ Arvore::Arvore()
 void Arvore::inserirAux(No *no, string palavra, int quantidade)
 {
 
-    // Se a palavra é menor que a palavra do nó, insere no filho esquerdo
     if (quantidade < no->quantidade)
     {
-        // Se o filho esquerdo é nulo, cria um novo nó como filho esquerdo
+       
         if (no->esquerdo == nullptr)
         {
             no->esquerdo = new No(palavra, quantidade, nullptr, nullptr);
         }
         else
         {
-            // Senão, chama o método recursivo para inserir no filho esquerdo
+           
             inserirAux(no->esquerdo, palavra, quantidade);
         }
     }
     else if (quantidade > no->quantidade)
     {
-        // Se a palavra é maior que a palavra do nó, insere no filho direito
         if (no->direito == nullptr)
         {
             no->direito = new No(palavra, quantidade, nullptr, nullptr);
         }
         else
         {
-            // Senão, chama o método recursivo para inserir no filho direito
             inserirAux(no->direito, palavra, quantidade);
         }
     }
@@ -46,20 +43,18 @@ void Arvore::inserirAux(No *no, string palavra, int quantidade)
             }
             else
             {
-                // Senão, chama o método recursivo para inserir no filho esquerdo
+                
                 inserirAux(no->esquerdo, palavra, quantidade);
             }
         }
         else
         {
-            // Se a palavra é maior que a palavra do nó, insere no filho direito
             if (no->direito == nullptr)
             {
                 no->direito = new No(palavra, quantidade, nullptr, nullptr);
             }
             else
             {
-                // Senão, chama o método recursivo para inserir no filho direito
                 inserirAux(no->direito, palavra, quantidade);
             }
         }

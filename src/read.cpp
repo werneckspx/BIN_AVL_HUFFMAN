@@ -176,15 +176,27 @@ void Heap(unordered_map<string, int> &hash, vector<No> &heap, unordered_map<stri
     F << endl
       << endl
       << "Codigo de Huffman" << endl;
+    auto start = std::chrono::high_resolution_clock::now();
     huffman.HuffmanCodes(heap);
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
+    F << "Tempo de execução: " << duration.count() << " microssegundos" << std::endl;
     F << endl
       << endl;
     F << "Arvore Binaria" << endl;
+    auto startB = std::chrono::high_resolution_clock::now();
     arvore.inserir(heap);
+    auto endB = std::chrono::high_resolution_clock::now();
+    auto durationB = std::chrono::duration_cast<std::chrono::microseconds>(endB - startB);
+    F << "Tempo de execução: " << durationB.count() << " microssegundos" << std::endl;
     F << endl
       << endl
       << "Arvore AVL" << endl;
+    auto startAVL = std::chrono::high_resolution_clock::now();
     avl.inserir(heap);
+    auto endAVL = std::chrono::high_resolution_clock::now();
+    auto durationAVL = std::chrono::duration_cast<std::chrono::microseconds>(endAVL - startAVL);
+    F << "Tempo de execução: " << durationAVL.count() << " microssegundos" << std::endl;
 
     heap.clear();
 }

@@ -6,6 +6,7 @@
 #include <cctype>
 #include <iomanip>
 #include <vector>
+#include <chrono>
 #define constante 10
 
 using namespace std;

@@ -100,26 +100,6 @@ void Huffman::HuffmanCodes(vector<No> &heap)
     imprimirCodes(rootH, array, top);
     cout << endl
          << endl;
-    // outHuff(rootH, array, top);
-    // clearHuffmanTree(rootH);
 
-    // auto endH = chrono::steady_clock::now();
-    // cout << "\nTEMPO HUFFMAN: " << chrono::duration_cast<chrono::nanoseconds>(endH - startH).count() << " ns" << endl << endl;
 }
 
-// imprimi a fila
-
-/*void printPriorityQueue(priority_queue<Huffman *, vector<Huffman *>, Compare> &huff)
-{
-
-    cout << "\nPriority Queue: ";
-    priority_queue<Huffman *, vector<Huffman *>, Compare> temphuff = huff;
-
-    while (!temphuff.empty())
-    {
-        cout << temphuff.top()->raiz->palavra << "(" << temphuff.top()->raiz->quantidade << ") ";
-        temphuff.pop();
-    }
-    cout << endl
-         << endl;
-}*/
